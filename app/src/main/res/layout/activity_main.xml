@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    android:orientation="vertical"
+
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Tiffany_Blue"
+        android:minHeight="?attr/actionBarSize"
+
+
+        android:paddingEnd="20dp"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/font"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Adding a ListView -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Yellow"
+            android:clipToPadding="true"
+            android:paddingHorizontal="20dp">
+
+
+        </ListView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
